@@ -1,6 +1,4 @@
-package com.hayatcode.client;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.hayatcode.scanner;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,10 +6,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.hayatcode.client.model.User;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.hayatcode.scanner.model.User;
 
 public class OrderNewCode2 extends AppCompatActivity {
-    EditText ET_password, ET_repeat_password, ET_pin;
+    EditText ET_password, ET_repeat_password;
     Button BT_next;
 
     User user;
@@ -22,7 +22,6 @@ public class OrderNewCode2 extends AppCompatActivity {
 
         ET_password = findViewById(R.id.password);
         ET_repeat_password = findViewById(R.id.repeat_password);
-        ET_pin = findViewById(R.id.pin);
 
         BT_next = findViewById(R.id.next);
 
@@ -44,12 +43,10 @@ public class OrderNewCode2 extends AppCompatActivity {
         boolean validate = true;
 
 
-        int pin = Integer.parseInt(ET_pin.getText().toString());
         String password = ET_password.getText().toString();
         String repeat_password = ET_repeat_password.getText().toString();
 
 
-        user.setPin(pin);
         user.setPassword(password);
 
         if (password.length() < 6) {
@@ -64,11 +61,6 @@ public class OrderNewCode2 extends AppCompatActivity {
         } else
             ET_repeat_password.setError(null);
 
-        if (ET_pin.getText().toString().length() != 5) {
-            ET_pin.setError(getString(R.string.pin_required));
-            validate = false;
-        } else
-            ET_pin.setError(null);
 
         return validate;
     }

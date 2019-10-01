@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Hayat Code</string>
+    <string name="app_name">Hayat Scanner</string>
     <string name="password_required">at least 6 characters</string>
     <string name="wrong_password">Wrong Password</string>
     <string name="retry">Retry</string>
@@ -29,5 +29,7 @@
     <string name="yes">yes</string>
     <string name="no">No</string>
     <string name="logout">Are you sure you want to log out?</string>
+    <string name="email_used">This email is already used, please use another</string>
+    <string name="wrong_pin">Wrong pin</string>
 
 </resources>

@@ -1,4 +1,4 @@
-package com.hayatcode.client;
+package com.hayatcode.scanner;
 
 import org.junit.Test;
 

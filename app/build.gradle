@@ -4,7 +4,7 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.0"
     defaultConfig {
-        applicationId "com.hayatcode.client"
+        applicationId "com.hayatcode.scanner"
         minSdkVersion 16
         targetSdkVersion 29
         versionCode 1

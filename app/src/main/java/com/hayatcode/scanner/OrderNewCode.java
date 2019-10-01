@@ -1,17 +1,14 @@
-package com.hayatcode.client;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.hayatcode.scanner;
 
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.TextView;
 
-import com.hayatcode.client.model.User;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.hayatcode.scanner.model.User;
 
 public class OrderNewCode extends AppCompatActivity {
     EditText ET_firstName, ET_familyName, ET_phone, ET_email;

@@ -14,22 +14,6 @@
         tools:context=".ProfileActivity">
 
 
-        <Button
-            android:id="@+id/save"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="24dp"
-            android:layout_marginEnd="40dp"
-            android:background="@drawable/but_round_green"
-            android:enabled="false"
-            android:fontFamily="sans-serif-black"
-            android:text="save"
-            android:visibility="visible"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sex" />
-
         <EditText
             android:id="@+id/firstname"
             android:layout_width="0dp"
@@ -93,7 +77,7 @@
             android:id="@+id/imageView19"
             android:layout_width="130dp"
             android:layout_height="130dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="35dp"
             android:background="@drawable/account_picture_bac"
             app:layout_constraintBottom_toBottomOf="@+id/account_picture"
             app:layout_constraintEnd_toEndOf="parent"
@@ -101,50 +85,6 @@
             app:layout_constraintTop_toTopOf="parent">
 
         </FrameLayout>
-
-        <ImageView
-            android:id="@+id/edit_first_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="15dp"
-            android:layout_marginRight="15dp"
-            app:layout_constraintBottom_toBottomOf="@+id/firstname"
-            app:layout_constraintEnd_toEndOf="@+id/firstname"
-            app:layout_constraintTop_toTopOf="@+id/firstname"
-            app:srcCompat="@drawable/ic_pencil_white" />
-
-        <ImageView
-            android:id="@+id/edit_gender"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="15dp"
-            android:layout_marginRight="15dp"
-            app:layout_constraintBottom_toBottomOf="@+id/sex"
-            app:layout_constraintEnd_toEndOf="@+id/sex"
-            app:layout_constraintTop_toTopOf="@+id/sex"
-            app:srcCompat="@drawable/ic_pencil_white" />
-
-        <ImageView
-            android:id="@+id/edit_birthdate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="15dp"
-            android:layout_marginRight="15dp"
-            app:layout_constraintBottom_toBottomOf="@+id/birthdate"
-            app:layout_constraintEnd_toEndOf="@+id/birthdate"
-            app:layout_constraintTop_toTopOf="@+id/birthdate"
-            app:srcCompat="@drawable/ic_pencil_white" />
-
-        <ImageView
-            android:id="@+id/edit_last_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="15dp"
-            android:layout_marginRight="15dp"
-            app:layout_constraintBottom_toBottomOf="@+id/lastname"
-            app:layout_constraintEnd_toEndOf="@+id/lastname"
-            app:layout_constraintTop_toTopOf="@+id/lastname"
-            app:srcCompat="@drawable/ic_pencil_white" />
 
 
         <TextView
@@ -173,6 +113,7 @@
             android:layout_marginStart="40dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="40dp"
+            android:layout_marginBottom="30dp"
             android:background="@drawable/bac_edittext_white"
             android:fontFamily="sans-serif"
             android:paddingStart="10dp"
@@ -180,51 +121,12 @@
             android:paddingEnd="10dp"
             android:paddingBottom="20dp"
             android:text="Gender"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView17" />
-
-        <TextView
-            android:id="@+id/logout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:layout_marginBottom="20dp"
-            android:background="@drawable/but_round_red"
-            android:paddingStart="20dp"
-            android:paddingTop="10dp"
-            android:paddingEnd="20dp"
-            android:paddingBottom="10dp"
-            android:text="LOGOUT"
-            android:textColor="@android:color/white"
-            android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/change_pass"
-            app:layout_constraintVertical_bias="1" />
-
-        <TextView
-            android:id="@+id/change_pass"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginEnd="40dp"
-            android:background="@drawable/but_round_blue"
-            android:gravity="center"
-            android:paddingStart="10dp"
-            android:paddingTop="20dp"
-            android:paddingEnd="10dp"
-            android:paddingBottom="20dp"
-            android:text="change password"
-            android:textColor="@android:color/white"
-            android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/save" />
+            app:layout_constraintTop_toBottomOf="@+id/textView17"
+            app:layout_constraintVertical_bias="0" />
 
         <TextView
             android:id="@+id/textView14"
@@ -257,7 +159,7 @@
             android:id="@+id/account_picture"
             android:layout_width="120dp"
             android:layout_height="120dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="35dp"
 
             app:civ_border="true"
             app:civ_border_color="@android:color/white"
@@ -269,14 +171,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/profile_picture" />
-
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            app:layout_constraintEnd_toEndOf="@+id/account_picture"
-            app:layout_constraintTop_toTopOf="@+id/account_picture"
-            app:srcCompat="@drawable/ic_pencil_green" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

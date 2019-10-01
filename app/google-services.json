@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:174405701783:android:da2fa1eeabc507c980d9d2",
         "android_client_info": {
-          "package_name": "com.hayatcode.client"
+          "package_name": "com.hayatcode.scanner"
         }
       },
       "oauth_client": [
