@@ -106,7 +106,7 @@ public class OrderNewCode3 extends AppCompatActivity {
         boolean validate = true;
 
 
-        int nationalId = Integer.parseInt(ET_nationalId.getText().toString());
+        String nationalId = ET_nationalId.getText().toString();
         String address = ET_address.getText().toString();
         String postalcode = ET_postalcode.getText().toString();
         String organization = ET_organization.getText().toString();
@@ -115,7 +115,7 @@ public class OrderNewCode3 extends AppCompatActivity {
         user.setDeliveryAddress(address+" "+postalcode);
         user.setOrganization(organization);
 
-        if (nationalId == 0) {
+        if (nationalId.isEmpty()) {
             ET_nationalId.setError(getString(R.string.field_required));
             validate = false;
         } else
