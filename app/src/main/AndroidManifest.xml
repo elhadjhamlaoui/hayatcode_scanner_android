@@ -11,8 +11,6 @@
         android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".LoginActivity"></activity>
         <activity android:name=".ChangePasswordActivity" />
-        <activity android:name=".AddInfoActivity" />
-        <activity android:name=".AddContactActivity" />
         <activity android:name=".OrderNewCode5" />
         <activity android:name=".OrderNewCode3" />
         <activity android:name=".OrderNewCode2" />
