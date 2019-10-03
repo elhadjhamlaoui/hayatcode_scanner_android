@@ -2,7 +2,10 @@
 Hayat Code Scanner Android Application
 
 ----------------------------------------------
-testing information :\n
-Pin : 12345\n
-Email : testscanner@test.test\n
+testing information :
+
+Pin : 12345
+
+Email : testscanner@test.test
+
 Password : testpassword
