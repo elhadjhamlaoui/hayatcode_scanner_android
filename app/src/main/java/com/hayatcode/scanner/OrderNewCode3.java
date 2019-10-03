@@ -82,7 +82,7 @@ public class OrderNewCode3 extends AppCompatActivity {
                                                                                     public void onComplete(@NonNull Task<Void> task) {
                                                                                         if (task.isSuccessful()) {
                                                                                             Intent intent = new Intent(getApplicationContext(), OrderNewCode5.class);
-                                                                                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                                                                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                                                                                             startActivity(intent);
                                                                                         }
                                                                                     }
