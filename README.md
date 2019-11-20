@@ -1,6 +1,9 @@
 # hayatcode_scanner_android
 Hayat Code Scanner Android Application
 
+Play Store link:
+https://play.google.com/store/apps/details?id=com.hayatcode.scanner
+
 ----------------------------------------------
 testing information :
 
